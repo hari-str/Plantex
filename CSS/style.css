@@ -446,6 +446,78 @@ Products section
     font-size: 1rem;
 }
 
+.shop-now {
+    display: flex;
+    justify-content: center;
+}
+
+/* ===============
+Add to cart
+================== */
+.back-btn {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-display {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.cart-img {
+    height: 100%;
+    max-height: 400px;
+    justify-self: center;
+}
+
+.product-round {
+    width: 210px;
+    height: 210px;
+    background-color: #dcf6e0dc;
+    position: absolute;
+    border-radius: 50%;
+    top: 28%;
+    left: 6%;
+    z-index: -1;
+}
+
+.product-info {
+    padding-top: 1rem;
+}
+
+.product-title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.product-company {
+    margin: 1rem 0;
+    color: #5f5f5f;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.product-desciption {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    font-size: 16px;
+
+}
+
+.cart-btn {
+    font-size: 1.5rem;
+}
+
+
 
 /* =============
 Contact section 
