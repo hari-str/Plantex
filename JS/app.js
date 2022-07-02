@@ -68,7 +68,7 @@ const displayProduct = () => {
         const { id, title, image, price } = productList;
         // console.log(productList);
 
-        return `<a href=""
+        return `<a href="./cartproduct.html?id=${id}"
                   <div class="product-card">
                   <div class="product-circle"></div>
                   <img src="${image}"

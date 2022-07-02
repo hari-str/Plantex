@@ -519,6 +519,24 @@ Add to cart
     color: #124e34;
 }
 
+.cart-item {
+    position: relative;
+}
+
+.item-count {
+    background-color: #16583a;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    padding: 1px 4px;
+    position: absolute;
+    top: -3px;
+    left: 12px;
+    text-align: center;
+}
 
 
 /* =============
