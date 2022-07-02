@@ -486,9 +486,9 @@ Add to cart
     z-index: -1;
 }
 
-.product-info {
+/* .product-info {
     padding-top: 1rem;
-}
+} */
 
 .product-title {
     font-size: 2rem;
@@ -497,10 +497,11 @@ Add to cart
 
 .product-company {
     margin: 1rem 0;
-    color: #5f5f5f;
+    color: #8f8f8f;
+    font-size: 14px;
 }
 
-.product-price {
+.products-price {
     font-size: 1.5rem;
     color: #1a1a1a;
 }
@@ -515,6 +516,7 @@ Add to cart
 
 .cart-btn {
     font-size: 1.5rem;
+    color: #124e34;
 }
 
 
