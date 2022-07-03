@@ -1,3 +1,14 @@
+/*================Nav toggle=============*/
+const navToggle = document.querySelector('#nav-toggle');
+const navList = document.querySelector('.nav-list');
+
+navToggle.addEventListener('click', function () {
+
+    navList.classList.toggle('show-link');
+});
+
+
+
 /*==================Scroll active section==============*/
 
 const sections = document.querySelectorAll('section[id]')
