@@ -7,8 +7,6 @@ navToggle.addEventListener('click', function () {
     navList.classList.toggle('show-link');
 });
 
-
-
 /*==================Scroll active section==============*/
 
 const sections = document.querySelectorAll('section[id]')
@@ -79,16 +77,15 @@ const displayProduct = () => {
         const { id, title, image, price } = productList;
         // console.log(productList);
 
-        return `<a href="./cartproduct.html?id=${id}"
-                  <div class="product-card">
-                  <div class="product-circle"></div>
-                  <img src="${image}"
-                  alt="" class="product-img">
-                  <h3 class="product-tittle">${title}</h3>
-                  <span class="product-price">&#x20B9;${price}</span>
-               </div> </a>`
-    })
-        .join('');
+        return `<a href="./cartproduct.html?id=${id}" class="click">
+        <div class="product-card" data-id=${id}>
+           <div class="product-circle"></div>
+           <img src="${image}"
+            alt="" class="product-img">
+           <h3 class="product-tittle">${title}</h3>
+           <span class="product-price">&#x20B9;${price}</span>
+        </div></a>`
+    }).join('');
 }
 
 displayProduct();
