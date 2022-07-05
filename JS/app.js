@@ -1,11 +1,37 @@
-/*================Nav toggle=============*/
-const navToggle = document.querySelector('#nav-toggle');
-const navList = document.querySelector('.nav-list');
+/*================Show menu=============*/
+const navToggle = document.querySelector('.nav-toggle');
+const navmenu = document.querySelector('.nav-menu');
+const navClose = document.querySelector('.nav-close');
 
-navToggle.addEventListener('click', function () {
 
-    navList.classList.toggle('show-link');
-});
+console.log(navToggle);
+console.log(navmenu);
+
+if (navToggle) {
+    navToggle.addEventListener('click', function () {
+
+        navmenu.classList.add('show-link');
+    })
+
+    if (navClose) {
+        navClose.addEventListener('click', function () {
+            navmenu.classList.remove('show-link');
+        })
+
+    }
+}
+
+/*==================remove menu mobile======*/
+
+const navList = document.querySelectorAll('.nav-link');
+
+console.log(navList);
+
+navList.forEach(n => n.addEventListener('click', function () {
+    // const navmenu = document.querySelector('.nav-menu')
+    navmenu.classList.remove('show-link')
+})
+)
 
 /*==================Scroll active section==============*/
 

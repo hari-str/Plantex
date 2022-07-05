@@ -134,6 +134,7 @@ a {
 
 .nav-link:hover {
     color: #113f2a;
+    position: relative;
 }
 
 .nav-link:hover::after {
@@ -169,11 +170,13 @@ a {
     /* display: none; */
 }
 
-.nav-toggle {
+.nav-toggle,
+.nav-close {
     cursor: pointer;
     font-size: 1.2rem;
     display: none;
 }
+
 
 .cart-icon {
     font-size: 1.3rem;
@@ -523,6 +526,7 @@ Add to cart
 
 .cart-item {
     position: relative;
+    z-index: -1;
 }
 
 .item-count {
@@ -694,7 +698,54 @@ Footer section
         column-gap: 1.5rem;
     }
 
+    .nav-menu {
+        background-color: white;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.2s;
+        padding: 4rem 0 0 3rem;
+        width: 80%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 0 1px 4px hsla(152, 4%, 15%, .3);
+        display: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    .nav-list a {
+        font-size: 15px;
+    }
+
+    .nav-link.active {
+        position: relative;
+    }
+
+
     .nav-toggle {
+        display: block;
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    .back-btn {
+        margin-top: 4rem;
+    }
+
+    .show-link {
+        right: 0;
         display: block;
     }
 
@@ -702,12 +753,7 @@ Footer section
         display: none;
     } */
 
-    .nav-menu ul {
-        display: flex;
-        flex-direction: column;
-        column-gap: 3rem;
-        display: none;
-    }
+
 
 
     /* home section */
@@ -768,7 +814,7 @@ Footer section
     }
 
     .product-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 170px);
     }
 
     .product-img {
